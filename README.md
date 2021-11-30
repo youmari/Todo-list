@@ -1,59 +1,43 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Todo List web app
 
-> One paragraph statement about the project.
+> Todo list app where you can add your tasks.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+![screenshot](./screenshot.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JAVASCRIPT
+- WEBPACK
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://youmari.github.io/todo-list)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+** Follow the instructions for using this webapp.**
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### Setup
-
+- clone the project to your local machine
 ### Install
+- in the root directory run the command ** npm install ** to install the dependencies
 
 ### Usage
-
-### Run tests
-
-### Deployment
+    open index.html with your browser
 
 
+👤 **Youmari**
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@youmari](https://github.com/youmari)
+- Twitter: [@yf_omari](https://twitter.com/yf_omari)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yassine-omari-945114190/)
 
 ## 🤝 Contributing
 
