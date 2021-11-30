@@ -12,11 +12,6 @@
 - JAVASCRIPT
 - WEBPACK
 
-## Live Demo
-
-[Live Demo Link](https://youmari.github.io/todo-list)
-
-
 ## Getting Started
 
 ** Follow the instructions for using this webapp.**
