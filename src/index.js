@@ -51,4 +51,5 @@ const displayItems = () => {
   clearBtn.classList.add('clear-btn');
   clearBtn.textContent = 'Clear all completed';
 };
+
 displayItems();
