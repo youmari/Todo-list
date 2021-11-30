@@ -1,4 +1,4 @@
-import listData from './js/data.js';
+import listData from './js/data';
 import './css/style.css';
 import enter from './assets/enter.png';
 import dots from './assets/three.png';
