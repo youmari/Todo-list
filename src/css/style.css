@@ -106,3 +106,10 @@ div {
   font-size: 1.2em;
   display: none;
 }
+
+.trash {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  display: none;
+}

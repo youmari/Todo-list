@@ -7,6 +7,7 @@ import updateItemsStatus from './js/updateItems';
 import addItems from './js/addItems';
 import clearAllCompletedtasks from './clearAllCompleted';
 import editItem from './js/editAndRemoveItem';
+import trash from './assets/trash.png'
 
 let listData = JSON.parse(localStorage.getItem('items')) || [];
 const ulContainer = document.querySelector('.todo-container');
@@ -35,6 +36,7 @@ const createTodoListElement = () => {
 
 const createItemsElements = (item) => {
   const threeDotIcon = document.createElement('img');
+  const trashImg = document.createElement('img');
   const listElement = document.createElement('li');
   const checkbox = document.createElement('input');
   const labelItem = document.createElement('label');
@@ -42,13 +44,15 @@ const createItemsElements = (item) => {
   const itemDiv = document.createElement('div');
   
   ulContainer.append(listElement);
-  listElement.append(itemDiv, threeDotIcon);
+  listElement.append(itemDiv, threeDotIcon,trashImg);
   itemDiv.append(checkbox, labelItem, inputItem);
   labelItem.classList.add('task-name');
   inputItem.classList.add('task-name-input');
   itemDiv.classList.add('item-div');
   threeDotIcon.src = dots;
   threeDotIcon.classList.add('dots');
+  trashImg.src = trash;
+  trashImg.classList.add('trash');
   checkbox.type = 'checkbox';
   if (item.completed === true) {
     checkbox.checked = true;
@@ -64,7 +68,7 @@ const createItemsElements = (item) => {
 };
 const renderList = () => {
   let number = 1;
-  if (listData) listData.forEach((item,index) => {
+  if (listData) listData.forEach((item) => {
     item.index = number++;
     createItemsElements(item);
   });

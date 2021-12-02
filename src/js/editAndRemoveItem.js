@@ -5,11 +5,15 @@ const editItem = (listData) => {
   const allItems = document.querySelectorAll('li');
   const input = document.querySelectorAll('.task-name-input');
   const allLabel = document.querySelectorAll('label');
+  const allDots = document.querySelectorAll('.dots');
+  const allTrash = document.querySelectorAll('.trash');
   allLabel.forEach((item, index) => {
     item.addEventListener('click', () => {
       input[index].value = allLabel[index].textContent;
       allLabel[index].style.display = 'none';
       input[index].style.display = 'block';
+      allDots[index].style.display = 'none';
+      allTrash[index].style.display = 'block';
       input[index].addEventListener('keyup', (e) => {
         if (e.keyCode === 13) {
           allLabel[index].textContent = input[index].value;
@@ -25,6 +29,15 @@ const editItem = (listData) => {
           storeListItemData(listData);
         }
       });
+    });
+  });
+
+  allTrash.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      listData = listData.filter((item) => item !== listData[index]);
+      allItems[index].remove();
+      storeListItemData(listData);
+      location.reload();
     });
   });
 };
