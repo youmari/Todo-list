@@ -63,8 +63,9 @@ const createItemsElements = (item) => {
   editItem(listData)
 };
 const renderList = () => {
+  let number = 1;
   if (listData) listData.forEach((item,index) => {
-    item.index = index;
+    item.index = number++;
     createItemsElements(item);
   });
 }

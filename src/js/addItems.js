@@ -2,7 +2,7 @@ import storeListItemData from './localStorageFunctions';
 
 const addItems = (addInput, inputBtn, listData, renderList, clearAllElement, clearElement) => {
   function itemObject(description) {
-    return { index: listData.length, description, completed: false };
+    return { index: listData.length + 1, description, completed: false };
   }
   inputBtn.addEventListener('click', () => {
     if (addInput.value === '') return;
