@@ -1,6 +1,6 @@
 /* eslint-disable */
 import listData from '../index';
-import { storeListItemData } from './localStorageFunctions';
+import  storeListItemData  from './localStorageFunctions';
 
 const updateItemsStatus = (checkbox, item) => {
   checkbox.addEventListener('change', () => {
@@ -8,7 +8,9 @@ const updateItemsStatus = (checkbox, item) => {
       ? item.completed = true
       : item.completed = false;
       storeListItemData(listData);
-  });
+    });
+
+
 };
 
 export default updateItemsStatus;
