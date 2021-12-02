@@ -99,3 +99,10 @@ div {
 .item-div {
   border: none;
 }
+
+.task-name-input {
+  all: unset;
+  padding: 0.2em 0.8em;
+  font-size: 1.2em;
+  display: none;
+}
