@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 - in the root directory run the command ** npm install ** to install the dependencies
 
 ### Usage
-    open index.html with your browser
+    in the root directory ren the command " npm start " to see the website in the browser
 
 
 👤 **Youmari**
