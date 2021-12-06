@@ -26,7 +26,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
     in the root directory run the command " npm start " to see the website in the browser
+    
+## Live demo
 
+- [See the project live](https://youmari.github.io/Todo-list/dist/)
 
 👤 **Youmari**
 
