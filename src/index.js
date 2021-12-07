@@ -77,9 +77,7 @@ const renderList = () => {
 
 const clearElement = () => {
   const listElement = document.querySelectorAll('li');
-  listElement.forEach((item) => { 
-    item.remove()
-  })
+  listElement.forEach((item) => item.remove())
 }
 
 const clearAllElement = () => {
@@ -100,18 +98,10 @@ displayItems();
 
 document.addEventListener('change', (e) => {
   if (e.target.matches('.checkbox')) {
-    if (e.target.checked) {
-      e.target.nextElementSibling.style.textDecoration = 'line-through';
-    } else {
-      e.target.nextElementSibling.style.textDecoration = 'none';
-    }
-
+    e.target.checked 
+      ? e.target.nextElementSibling.style.textDecoration = 'line-through'
+      : e.target.nextElementSibling.style.textDecoration = 'none';
   }
+});
 
-})
-
-
-  
-  
-  export default listData;
-  
+export default listData;
